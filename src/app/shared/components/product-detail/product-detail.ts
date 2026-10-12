@@ -1,8 +1,9 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [CurrencyPipe],
   selector: 'app-product-detail',
   styleUrl: './product-detail.scss',
   templateUrl: './product-detail.html',

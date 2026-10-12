@@ -21,8 +21,8 @@
             <dt>Lagerbestand:</dt>
             <dd><data value="104">{{detail.stock}} Stück</data></dd>
 
-            <dt>Preis pro Stück (€):</dt>
-            <dd><data value="18.00">{{detail.price}}</data></dd>
+            <dt>Preis pro Stück:</dt>
+            <dd><data value="18.00">{{detail.price | currency: 'EUR'}}</data></dd>
         </dl>
     </section>
 </article>
