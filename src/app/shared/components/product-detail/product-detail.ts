@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   imports: [],
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
   templateUrl: './product-detail.html',
 })
 export class ProductDetail {
+
+  private route = inject(ActivatedRoute)
+
+  ngOnInit() {
+    let currentName = this.route.snapshot.paramMap.get('productName')
+    if (currentName) {
+       this.detail.name = currentName
+    }
+  }
+
   //details for an example Product
   detail = {
     name: 'Gaming Maus',
