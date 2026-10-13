@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { ProductList } from './shared/components/product-list/product-list';
 import { ProductDetail } from './shared/components/product-detail/product-detail';
-import { ErrorPage } from './error-page/error-page';
+import { ErrorPage } from './shared/components/error-page/error-page';
 
 
 export const routes: Routes = [
